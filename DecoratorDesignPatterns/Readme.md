@@ -1,0 +1,22 @@
+-Decorator Design Pattern 
+- Examples
+    - Design Coffe Machine
+    - Design Pizza
+- This design pattern will solve the problem class explosion
+- Class Explosion meaning
+    - Suppose we have a base object for PIZZA
+        - Now we have to add some new features to the pizza
+        - For this we will make another class name Toppings which will have functions for toppings
+        - Some more req from the customers to add chess etc then we will need to make more classes related to this requirement
+        - So our primary object was PIZZA.
+        - We will add a Layer of feature for topping over this.
+        - Then whenever required we will be adding an another layer of feature on the object of Pizza + Toppings object.
+            - So in short it is just like stacking up different layers of features over our primary object which is PIZZA.
+    - This is bad and we will need to maintain a lot of classes.
+- The Decorator Design Pattern will solve this problem
+    - Here we will be creating an abstract decorator which will have a has a relation on pizza and also is a relation on the Pizza(base class)
+    - Reason for the Has-a relation
+        - The object of this decorator will just be used when we are adding a new layer of feature but initially we will be requiring a base pizza for creating a pizza.
+        - We can use constructor invocation.
+    - Reason for the Is-a relation
+        - Now at the end we will be requiring a pizza only right. That's the main moto.
