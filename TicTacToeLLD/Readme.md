@@ -1,0 +1,22 @@
+- LLD for TicTacToe
+    - Now when we visualize a tic-tac-toe game what all things come to our mind
+        - 2 Players (can be extended to n players)
+        - The Sign I want to choose can be anything
+        - Board for playing the game
+    - These are only the classes we'll be needing for designing the complete game
+        - Person
+            - has Type
+        - Board
+            - is a 2D array of type Sign
+        - Type
+            - The string type we want to take.
+        - GameManager
+            - has a relation on Person class.
+            - has a relaton on the Board class.
+            - This class will be responsible to start the game and complete the game
+            - This is the gamemaster which will guide the persons palying the game
+                - To make a move.
+                - Tell this is a valid move or not.
+                - Tell if we have a winner or the game is over.
+"""
+
