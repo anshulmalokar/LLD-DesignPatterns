@@ -1,0 +1,17 @@
+- Chain of Responsibility Design Pattern
+ - Examples
+    - Design ATM System
+    - Design Vending Machine
+    - Desing Logger System.
+    - Authentication Handler
+- Suppose we have an ATM machine
+    - Now in the machine tere are some 2000,500,100 etc notes.
+    - So there would be a handler of 2000 ruppee not similarly there would be handlers for different notes.
+    - Now as a client we pass a request for 200 ruppee note
+        - This will first get parsed from the 2000 ruppee note handler
+        - Then by the 500 ruppee handler.
+    - So whenever there would be someone capable of handeling our request properly he will respond us back.
+- Desing
+    - One abstract handler class
+        - Handlers which would extend this abstract base handler class.
+    - Client class
